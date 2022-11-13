@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Vikas bansal</title>
+    <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="styles/books.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <!-- Import's Script -->
+    <script type="module">
+      import { navbar } from "./components/navbar.js";
+
+      let header = document.getElementById("navbar");
+      header.innerHTML = navbar();
+    </script>
+  </head>
+  <body onload="activeTab()">
+    <header id="navbar"></header>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/books.js"></script>
+  </body>
+</html>
