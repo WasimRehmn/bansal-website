@@ -1,6 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 .banner {
   padding-top: 72px;
 }
 .banner img {
   width: 100%;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px;
+  justify-content: space-between;
+}
+
+.contact > div {
+  width: 100%;
+  /* border: 1px solid rgba(65, 65, 65, 0.558); */
+  margin: 2%;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.contact .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5%;
+}
+
+.contact .row > div {
+  width: 100%;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 15px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: 14px;
+  color: #212121;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+
+label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+  color: #000;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #000;
+}
+
+.submit_btn {
+  width: 200px;
+  padding: 15px 25px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 2% 30%;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #00b5f5;
+  background-image: #002a8f;
+  background-image: -moz-linear-gradient(45deg, #00b5f5, #002a8f);
+  background-image: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+  background-image: linear-gradient(45deg, #00b5f5, #002a8f);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.submit_btn:hover {
+  background-position: -200%;
+  transition: background 300ms ease-in-out;
+}
+
+.info,
+.form {
+  /* background-color: aqua; */
+}
+
+.info_templete > .message {
+  text-align: center;
+}
+
+.info_templete span {
+  display: inline-block;
+}
+.info_templete > div {
+  margin: 5px 5px;
+}
+
+.info .icon_tag {
+  border: 2px solid #000;
+  padding: 5px 7px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.info .icon_result {
+  padding: 7px;
+}
+
+.social-container {
+  width: 100%;
+  margin: 35px auto;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.35em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00b5f5, #002a8f);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00b5f5;
+  background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+@media screen and (max-width: 835px) {
+  .contact {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .contact > div {
+    padding: 20px;
+  }
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .submit_btn {
+    width: 150px;
+    background-size: 270px;
+  }
 }

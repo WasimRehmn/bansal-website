@@ -24,7 +24,7 @@ export const navbar = () => {
 
       <div id="mySidenav" class="sidenav">
         <a href="/" class="sidelogo">
-          <img src="assets/images/vikuBhaiya.png" , alt="logo" />
+          <img src="assets/images/vikas_bansal_logo.png" , alt="logo" />
         </a>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a

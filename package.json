@@ -1,0 +1,23 @@
+{
+  "name": "grafikos",
+  "version": "1.0.0",
+  "description": "Personal Website of Vikas Bansal",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "node-sass -w styles/contact.scss styles/contact.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WasimRehmn/bansal-website.git"
+  },
+  "author": "Wasim Rehman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WasimRehmn/bansal-website/issues"
+  },
+  "homepage": "https://github.com/WasimRehmn/bansal-website#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

@@ -15,11 +15,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <!-- Link Icon's CSS -->
-    <script
-      src="https://kit.fontawesome.com/2f354f7b13.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -27,17 +22,22 @@
     />
     <!-- CSS only -->
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/style.css" />
 
     <!-- Import's Script -->
     <script type="module">
       import { navbar } from "./components/navbar.js";
+      import { loader } from "./components/loader.js";
 
       let header = document.getElementById("navbar");
       header.innerHTML = navbar();
+
+      let loaderComponent = document.querySelector(".loader_wrapper");
+      loaderComponent.innerHTML = loader();
     </script>
   </head>
   <body onload="activeTab()">
+    <section class="loader_wrapper"></section>
     <header id="navbar"></header>
 
     <section id="slider">
@@ -244,11 +244,14 @@
         pleasures, or else he endures pains to avoid worse pains."
       </div>
     </section>
-
+    <script
+      src="https://kit.fontawesome.com/2f354f7b13.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="scripts/navbar.js"></script>
+    <script src="scripts/script.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>
