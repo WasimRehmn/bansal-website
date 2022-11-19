@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Vikas bansal</title>
+    <title>Books | Vikas bansal</title>
     <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
     <!-- CSS only -->
     <link rel="stylesheet" href="styles/books.css" />
@@ -12,13 +12,39 @@
     <!-- Import's Script -->
     <script type="module">
       import { navbar } from "./components/navbar.js";
+      import { loader } from "./components/loader.js";
 
       let header = document.getElementById("navbar");
       header.innerHTML = navbar();
+
+      let loaderComponent = document.querySelector(".loader_wrapper");
+      loaderComponent.innerHTML = loader();
     </script>
   </head>
   <body onload="activeTab()">
+    <section class="loader_wrapper"></section>
     <header id="navbar"></header>
+    <section class="banner">
+      <img style="aspect-ratio: 3/1;" src="assets/images/books_banner.jpg" alt="banner">
+    </section>
+
+    <section>
+      <div class="one">
+        <h1>Books</h1>
+      </div>
+      <div class="three">
+        <h1>Badla</h1>
+      </div>
+      <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/c50f9bc476.html" style="border: 1px solid lightgray; width: 80%; height: 600px; margin-left: 10%;"></iframe>
+      <div class="three">
+        <h1>102 Not Out</h1>
+      </div>
+      <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/12f4390aa3.html" style="border: 1px solid lightgray; width: 80%; height: 600px; margin-left: 10%;"></iframe>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/2f354f7b13.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/books.js"></script>
   </body>

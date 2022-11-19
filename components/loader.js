@@ -9,7 +9,7 @@ export const loader = () => {
       *::after {
         box-sizing: border-box;
       }
-      loader_wrapper {
+      .loader_wrapper {
         font-family: "Roboto", sans-serif;
         font-size: 1rem;
         line-height: 1.5;
@@ -19,7 +19,6 @@ export const loader = () => {
         top: 0;
         left: 0;
         margin: 0;
-        min-height: 100vh;
         background: #fff;
         overflow: hidden;
         width: 100%;

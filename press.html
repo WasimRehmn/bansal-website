@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Vikas bansal</title>
+    <title>Press | Vikas bansal</title>
     <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
     <!-- CSS only -->
     <link rel="stylesheet" href="styles/press.css" />
@@ -12,16 +12,25 @@
     <!-- Import's Script -->
     <script type="module">
       import { navbar } from "./components/navbar.js";
+      import { loader } from "./components/loader.js";
 
       let header = document.getElementById("navbar");
       header.innerHTML = navbar();
+
+      let loaderComponent = document.querySelector(".loader_wrapper");
+      loaderComponent.innerHTML = loader();
     </script>
   </head>
   <body onload="activeTab()">
+    <section class="loader_wrapper"></section>
     <header id="navbar"></header>
     <section class="banner">
       <img src="assets/images/press_banner.jpg" alt="contact_banner" />
     </section>
+    <script
+      src="https://kit.fontawesome.com/2f354f7b13.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/press.js"></script>
   </body>

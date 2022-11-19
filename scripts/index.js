@@ -17,6 +17,19 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+var swiper2 = new Swiper('.swiper-container', {
+    slidesPerView: window.innerWidth > 835 ? 3 : window.innerWidth > 690 ? 2 : 1,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
+  });
+
 // window.onscroll = function () { scrollFunction() };
 // if (window.innerWidth < 1001) {
 //     document.getElementById("navbar").style.background = "white";

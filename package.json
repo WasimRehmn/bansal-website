@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "node-sass -w styles/contact.scss styles/contact.css"
+    "watch:scss": "node-sass -w styles/t.scss styles/t.css"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/WasimRehmn/bansal-website/issues"
   },
-  "homepage": "https://github.com/WasimRehmn/bansal-website#readme",
-  "dependencies": {
-    "node-sass": "^8.0.0"
-  }
+  "homepage": "https://github.com/WasimRehmn/bansal-website#readme"
 }
