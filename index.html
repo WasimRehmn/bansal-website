@@ -28,12 +28,16 @@
     <script type="module">
       import { navbar } from "./components/navbar.js";
       import { loader } from "./components/loader.js";
+      import { footer } from "./components/footer.js";
 
       let header = document.getElementById("navbar");
       header.innerHTML = navbar();
 
       let loaderComponent = document.querySelector(".loader_wrapper");
       loaderComponent.innerHTML = loader();
+
+      let footerComponent = document.getElementById("footer");
+      footerComponent.innerHTML = footer();
     </script>
   </head>
   <body onload="activeTab()">
@@ -80,9 +84,11 @@
       </div>
     </div>
     <section class="gallery">
-        <div class="one">
-          <h1>Vikas Gallery</h1>
-        </div>
+      <div class="one">
+        <h1 class="animate__animated animate__rubberBand animate__delay-2s">
+          Vikas Gallery
+        </h1>
+      </div>
       <div class="swiper-container">
         <div class="bg"></div>
         <div class="bg bg2"></div>
@@ -90,72 +96,49 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="item">
-              <img
-                src="assets/images/img1.jpeg"
-                alt=""
-              />
+              <img src="assets/images/1.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="item">
-              <img
-                src="assets/images/img2.jpeg"
-                alt=""
-              />
+              <img src="assets/images/2.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="item">
-              <img
-                src="assets/images/img3.jpeg"
-                alt=""
-              />
+              <img src="assets/images/3.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="item">
-              <img
-              src="assets/images/img4.jpeg"
-                alt=""
-              />
+              <img src="assets/images/4.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="item">
-              <img
-              src="assets/images/img5.jpeg"
-                alt=""
-              />
+              <img src="assets/images/5.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="item">
-              <img
-              src="assets/images/img9.jpeg"
-                alt=""
-              />
+              <img src="assets/images/9.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="item">
-              <img
-              src="assets/images/img7.jpeg"
-                alt=""
-              />
+              <img src="assets/images/7.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="item">
-              <img
-              src="assets/images/img8.jpeg"
-                alt=""
-              />
+              <img src="assets/images/8.jpg" alt="" />
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
+    <footer id="footer"></footer>
+   
 
     <script
       src="https://kit.fontawesome.com/2f354f7b13.js"

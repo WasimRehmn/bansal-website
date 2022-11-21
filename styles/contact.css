@@ -116,10 +116,7 @@ label,
   transition: background 300ms ease-in-out;
 }
 
-.info,
-.form {
-  /* background-color: aqua; */
-}
+
 
 .info_templete > .message {
   text-align: center;

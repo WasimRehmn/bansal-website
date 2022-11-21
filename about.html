@@ -13,12 +13,16 @@
     <script type="module">
       import { navbar } from "./components/navbar.js";
       import { loader } from "./components/loader.js";
+      import { footer } from "./components/footer.js";
 
       let header = document.getElementById("navbar");
       header.innerHTML = navbar();
 
       let loaderComponent = document.querySelector(".loader_wrapper");
       loaderComponent.innerHTML = loader();
+
+      let footerComponent = document.getElementById("footer");
+      footerComponent.innerHTML = footer();
     </script>
   </head>
   <body onload="activeTab()">
@@ -33,6 +37,7 @@
         <span>S</span>
       </div>
     </section>
+    <footer id="footer"></footer>
     <script
       src="https://kit.fontawesome.com/2f354f7b13.js"
       crossorigin="anonymous"

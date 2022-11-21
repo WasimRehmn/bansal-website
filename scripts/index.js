@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper2 = new Swiper('.swiper-container', {
-    slidesPerView: window.innerWidth > 835 ? 3 : window.innerWidth > 690 ? 2 : 1,
+    slidesPerView: window.innerWidth > 835 ? 3 : window.innerWidth > 690 ? 2 : 2,
     spaceBetween: 30,
     autoplay: {
         delay: 3000,

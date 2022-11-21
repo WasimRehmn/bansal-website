@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books | Vikas bansal</title>
+    <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="styles/books.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Import's Script -->
+    <script type="module">
+      import { navbar } from "./components/navbar.js";
+      import { loader } from "./components/loader.js";
+
+      let header = document.getElementById("navbar");
+      header.innerHTML = navbar();
+
+      let loaderComponent = document.querySelector(".loader_wrapper");
+      loaderComponent.innerHTML = loader();
+    </script>
+  </head>
+  <body onload="activeTab()">
+    <section class="loader_wrapper"></section>
+    <header id="navbar"></header>
+    <section
+      class="banner"
+    ></section>
+
+    <section id="bookCard"></section>
+    <script
+      src="https://kit.fontawesome.com/2f354f7b13.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/script.js"></script>
+    <script type="module">
+      import bookList from "../assets/data.json" assert { type: "json" };
+      let bookId = parseInt(window.location.href.split("=")[1]);
+      let book_detail = bookList.books[bookId - 1];
+
+      document.querySelector(
+        "title"
+      ).innerText = `${book_detail.title} | Vikas Bansal`;
+
+      document.querySelector(".banner").innerHTML = ` <img
+      																								style="aspect-ratio: 3/1; object-fit: cover; width: 100%;"
+      																								src=${book_detail.cover_pic}
+      																								alt="banner"
+      																							/>
+      																						`;
+
+
+      document.getElementById("bookCard").innerHTML = `
+            <div class="three">
+                <h1>${book_detail.title}</h1>
+            </div>
+            <iframe allowfullscreen="allowfullscreen" class="fp-iframe" src=${book_detail.url} style="border: 1px solid lightgray; width: 90%; height: 750px; margin-left: 5%;"></iframe>
+        `;
+    </script>
+  </body>
+</html>
