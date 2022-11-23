@@ -7,8 +7,58 @@
     <title>Books | Vikas bansal</title>
     <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
     <!-- CSS only -->
-    <link rel="stylesheet" href="styles/books.css" />
+    <!-- <link rel="stylesheet" href="styles/books.css" /> -->
     <link rel="stylesheet" href="styles/style.css" />
+
+    <style>
+      html {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .banner {
+        padding: 72px 0 0 0;
+      }
+      .banner img {
+        width: 100%;
+      }
+
+      section {
+        padding: 10px;
+      }
+      .three h1 {
+        margin: 50px;
+      }
+
+      .three h1 {
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 1.5em;
+        padding-bottom: 15px;
+        position: relative;
+      }
+
+      .three h1:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        width: 55px;
+        background-color: #111;
+      }
+      .three h1:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        height: 1px;
+        width: 95%;
+        max-width: 255px;
+        background-color: #333;
+      }
+    </style>
+
     <!-- Import's Script -->
     <script type="module">
       import { navbar } from "./components/navbar.js";
@@ -24,9 +74,7 @@
   <body onload="activeTab()">
     <section class="loader_wrapper"></section>
     <header id="navbar"></header>
-    <section
-      class="banner"
-    ></section>
+    <section class="banner"></section>
 
     <section id="bookCard"></section>
     <script
@@ -49,7 +97,6 @@
       																								alt="banner"
       																							/>
       																						`;
-
 
       document.getElementById("bookCard").innerHTML = `
             <div class="three">

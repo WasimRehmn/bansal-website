@@ -307,7 +307,7 @@ h1 em {
 
 .banner ~ section{
   height: fit-content;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 
 /* Media Queries */
