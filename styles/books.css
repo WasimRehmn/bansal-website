@@ -113,10 +113,11 @@ h1 em {
 }
 
 .page-content {
-  display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
-  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
   margin: 0 auto;
   gap: 5%;
   font-family: var(--font-sans);
@@ -127,8 +128,9 @@ h1 em {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding: 1rem;
-  width: 100%;
+  padding: 1%;
+  margin-bottom: 5rem;
+  width: 45%;
   aspect-ratio: 1/1;
   text-align: center;
   color: whitesmoke;
@@ -205,6 +207,12 @@ h1 em {
 .card:nth-child(7):before {
   background-image: url("../assets/images/jhund.jpeg");
 }
+.card:nth-child(8):before {
+  background-image: url("../assets/images/chehre.jpg");
+}
+.card:nth-child(9):before {
+  background-image: url("../assets/images/jasbaton_ka_ghar.jpg");
+}
 .content {
   position: relative;
   display: flex;
@@ -222,7 +230,7 @@ h1 em {
   font-size: 2.2rem;
   font-weight: bold;
   line-height: 0;
-  color:white;
+  color: white;
 }
 .copy {
   font-family: var(--font-serif);
@@ -262,7 +270,6 @@ h1 em {
     0 .5rem 8rem #8938E6;
 } */
 
-
 @media (hover: hover) and (min-width: 600px) {
   .card:after {
     transform: translateY(0);
@@ -273,7 +280,7 @@ h1 em {
   .content > *:not(.title) {
     opacity: 0;
     transform: translateY(1rem);
-    transition: transform var(--d ) var(--e), opacity var(--d) var(--e);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
   }
   .card:hover,
   .card:focus-within {
@@ -305,15 +312,14 @@ h1 em {
   }
 }
 
-.banner ~ section{
+.banner ~ section {
   height: fit-content;
-  padding-bottom: 200px;
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 835px) {
-  .title{
+  .title {
     font-size: 1.5rem;
   }
   .one h1 {
@@ -325,7 +331,6 @@ h1 em {
 }
 
 @media screen and (max-width: 690px) {
-  
   .one h1 {
     font-size: 30px;
   }
@@ -334,32 +339,18 @@ h1 em {
   }
 }
 
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 80%;
+@media (max-width: 800px) {
+  .card {
+    width: 100%;
   }
-}
-@media (min-width: 800px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
-  }
-  
 }
 @media (max-width: 975px) {
-  .card:nth-child(4) .title{
+  .card:nth-child(4) .title {
     font-size: 1.5rem;
   }
-  
 }
 @media (min-width: 1150px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 90%;
-    gap: 10%;
-  }
-  .card:nth-child(4) .title{
-    font-size: 2.0rem;
+  .card:nth-child(4) .title {
+    font-size: 2rem;
   }
 }

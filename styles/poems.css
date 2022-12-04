@@ -1,0 +1,172 @@
+body {
+  width: 100vw;
+}
+.banner {
+  padding-top: 72px;
+}
+.banner img {
+  width: 100%;
+}
+
+.poems {
+  width: 100%;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+.poems img {
+  padding: auto;
+  width: 30%;
+  aspect-ratio: 1/1.3;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 50px;
+  border: 2px solid #FFD700;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+
+  
+
+.poems img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 835px) {
+  .poems {
+    padding: 50px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 690px) {
+  .poems {
+    padding: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .poems img {
+    width: 45%;
+    margin: 0 auto 60px;
+  }
+}
+@media (max-width: 450px) {
+  .poems {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .poems img {
+    width: 90%;
+    margin: 0 auto 60px;
+    margin-bottom: 20px;
+  }
+}
+
+/* heading */
+.three  {
+  margin: 50px;
+}
+
+.three h1 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 30px;
+  position: relative;
+}
+.three  p  {
+    font-size: 16px;
+    margin-top: -55px;
+    padding-left: 130px;
+}
+
+.three h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+.three h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #333;
+}
+
+/* Pop up css */
+
+.show {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    display: none;
+    position: fixed;
+  }
+  .show .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.66);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .show .img-show {
+    width: 40%;
+    aspect-ratio: 2/2.55;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  .img-show span {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 900;
+    color: #FFD700;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+  }
+  
+  .img-show img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 2px solid #FFD700; */
+  }
+
+  @media (max-width: 850px) {
+    .show .img-show  {
+      width: 80%;
+    }
+  }
+  @media (max-width: 450px) {
+    .show .img-show  {
+      width: 95%;
+    }
+  }

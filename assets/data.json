@@ -54,6 +54,22 @@
             "cover_pic": "assets/images/jhund.jpeg",
             "url": "https://heyzine.com/flip-book/5de54abc99.html",
             "pdf_path": "assets/pdf/KBC-II.pdf"
+        },
+        {
+            "id": 8,
+            "title": "Chehre",
+            "author": "Vikas Bansal",
+            "cover_pic": "assets/images/chehre.jpg",
+            "url": "https://heyzine.com/flip-book/e64be6fadf.html",
+            "pdf_path": "assets/pdf/chehre.pdf"
+        },
+        {
+            "id": 9,
+            "title": "Jasbaton Ka Ghar",
+            "author": "Vikas Bansal",
+            "cover_pic": "assets/images/jasbaton_ka_ghar.jpg",
+            "url": "https://heyzine.com/flip-book/0f411e8a96.html",
+            "pdf_path": "assets/pdf/jasbaton_ka_ghar.pdf"
         }
     ]
 }
