@@ -1,282 +1,209 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <title>Home | Vikas Bansal</title>
-    <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
 
-    <!-- Link Animate's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Home | Vikas Bansal</title>
+  <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-    <!-- CSS only -->
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+  <!-- Link Animate's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Import's Script -->
-    <script type="module">
-      import { navbar } from "./components/navbar.js";
-      import { loader } from "./components/loader.js";
-      import { footer } from "./components/footer.js";
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/style.css" />
 
-      let header = document.getElementById("navbar");
-      header.innerHTML = navbar();
+  <!-- Import's Script -->
+  <script type="module">
+    import { navbar } from "./components/navbar.js";
+    import { loader } from "./components/loader.js";
+    import { footer } from "./components/footer.js";
 
-      let loaderComponent = document.querySelector(".loader_wrapper");
-      loaderComponent.innerHTML = loader();
+    let header = document.getElementById("navbar");
+    header.innerHTML = navbar();
 
-      let footerComponent = document.getElementById("footer");
-      footerComponent.innerHTML = footer();
-    </script>
-  </head>
-  <body onload="activeTab()">
-    <section class="loader_wrapper"></section>
-    <header id="navbar"></header>
+    let loaderComponent = document.querySelector(".loader_wrapper");
+    loaderComponent.innerHTML = loader();
 
-    <section id="slider">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/images/home_banner1.gif" alt="slide 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/home_banner2.jpg" alt="slide 2" />
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/home_banner3.jpg" alt="slide 3" />
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/home_banner4.jpg" alt="slide 4" />
-          </div>
+    let footerComponent = document.getElementById("footer");
+    footerComponent.innerHTML = footer();
+  </script>
+</head>
+
+<body onload="activeTab()">
+  <section class="loader_wrapper"></section>
+  <header id="navbar"></header>
+
+  <section id="slider">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/home_banner1.gif" alt="slide 1" />
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+          <img src="assets/images/home_banner2.jpg" alt="slide 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home_banner3.jpg" alt="slide 3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/home_banner4.jpg" alt="slide 4" />
+        </div>
       </div>
-    </section>
-    <div class="mytest">
-      <div class="ten">
-        <svg viewbox="0 0 11 3">
-          <text
-            x="5"
-            y="2"
-            text-anchor="middle"
-            font-size="1.2"
-            fill="none"
-            stroke-width=".025"
-            stroke="#f7ca18"
-            font-family="sans-serif"
-          >
-            Vikas Bansal
-          </text>
-        </svg>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <section class="gallery">
-      <div class="one">
-        <h1 class="animate__animated animate__rubberBand animate__delay-2s">
-          Vikas Gallery
-        </h1>
-      </div>
-      <div class="swiper-container">
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
-        <div class="imgCardSlide">
-          <div class="owl-carousel">
-            <div class="gallery__photo">
-              <img
-                src="assets/images/1.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+  </section>
+  <div class="mytest">
+    <div class="ten">
+      <svg viewbox="0 0 11 3">
+        <text x="5" y="2" text-anchor="middle" font-size="1.2" fill="none" stroke-width=".025" stroke="#f7ca18"
+          font-family="sans-serif">
+          Vikas Bansal
+        </text>
+      </svg>
+    </div>
+  </div>
+  <section class="gallery">
+    <div class="one">
+      <h1 class="animate__animated animate__rubberBand animate__delay-2s">
+        Vikas Gallery
+      </h1>
+    </div>
+    <div class="swiper-container">
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <div class="imgCardSlide">
+        <div class="owl-carousel">
+          <div class="gallery__photo">
+            <img src="assets/images/1.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/2.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/2.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/3.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/3.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/4.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/4.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/5.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/5.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/6.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/6.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/7.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/7.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/8.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/8.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/9.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/9.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/21.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/21.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/22.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/22.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/23.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/23.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/24.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/24.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/25.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/25.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/26.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/26.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            <div class="gallery__photo">
-              <img
-                src="assets/images/27.jpg"
-                alt=""
-              />
-              <div class="gallery__fade">
-                <i class="gallery__icon" data-feather="image"></i>
-              </div>
+          </div>
+          <div class="gallery__photo">
+            <img src="assets/images/27.jpg" alt="" />
+            <div class="gallery__fade">
+              <i class="gallery__icon" data-feather="image"></i>
             </div>
-            
+          </div>
+
         </div>
       </div>
       <div class="videos">
-        <iframe
-          
-          src="https://www.youtube.com/embed/I4J0Kn-Jxww" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        <iframe src="https://www.youtube.com/embed/I4J0Kn-Jxww" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
-        <iframe 
-         
-          
-          src="https://www.youtube.com/embed/8w7kMSqZMkc" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        <iframe src="https://www.youtube.com/embed/8w7kMSqZMkc" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
-    </section>
+  </section>
+  <img src="https://photos.google.com/u/1/photo/AF1QipN7AVbAWK47Cfo3rpl8H-YhNf7agvMvEpSaHfza" alt="jhbh">
 
-    <footer id="footer"></footer>
+  <footer id="footer"></footer>
 
-    <script
-      src="https://kit.fontawesome.com/2f354f7b13.js"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://kit.fontawesome.com/2f354f7b13.js" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 
-    <script src="scripts/script.js"></script>
-    <script src="scripts/index.js"></script>
-  </body>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
 </html>

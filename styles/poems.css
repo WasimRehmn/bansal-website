@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  justify-items: center;
+  /* justify-items: center; */
 }
 
 .poems img {
@@ -30,6 +30,16 @@ body {
   border: 2px solid #FFD700;
   transition: transform 0.5s ease-in-out;
   cursor: pointer;
+}
+.poems div {
+  padding: auto;
+  width: 30%;
+  aspect-ratio: 1/1.3;
+  align-self: center;
+  justify-self: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 50px;
 }
 
 

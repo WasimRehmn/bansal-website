@@ -28,7 +28,7 @@ function activeTab() {
 
    
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < mainNabTab.length; i++) {
         let location = window.location.href === "http://127.0.0.1:5500/book-details.html" ? "http://127.0.0.1:5500/books.html" : window.location.href;
         
         if (location === mainNabTab[i].href) {
