@@ -187,25 +187,25 @@ h1 em {
   background-position: bottom 65px center;
 }
 .card:nth-child(1):before {
-  background-image: url("../assets/images/badla.jpeg");
+  background-image: url("../assets/images/badla.jpg");
 }
 .card:nth-child(2):before {
-  background-image: url("../assets/images/not_out.jpeg");
+  background-image: url("../assets/images/not_out.jpg");
 }
 .card:nth-child(3):before {
-  background-image: url("../assets/images/KBC-I.jpeg");
+  background-image: url("../assets/images/KBC-I.jpg");
 }
 .card:nth-child(4):before {
-  background-image: url("../assets/images/bday_celebration.jpeg");
+  background-image: url("../assets/images/bday_celebration.jpg");
 }
 .card:nth-child(5):before {
-  background-image: url("../assets/images/gulabo_sitabo.jpeg");
+  background-image: url("../assets/images/gulabo_sitabo.jpg");
 }
 .card:nth-child(6):before {
-  background-image: url("../assets/images/KBC-II.jpeg");
+  background-image: url("../assets/images/KBC-II.jpg");
 }
 .card:nth-child(7):before {
-  background-image: url("../assets/images/jhund.jpeg");
+  background-image: url("../assets/images/jhund.jpg");
 }
 .card:nth-child(8):before {
   background-image: url("../assets/images/chehre.jpg");
@@ -330,6 +330,7 @@ h1 em {
   }
 }
 
+
 @media screen and (max-width: 690px) {
   .one h1 {
     font-size: 30px;
@@ -352,5 +353,10 @@ h1 em {
 @media (min-width: 1150px) {
   .card:nth-child(4) .title {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 365px) {
+  .card:nth-child(4) .title {
+    font-size: 1.1rem;
   }
 }

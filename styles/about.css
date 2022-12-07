@@ -27,7 +27,7 @@ section {
 }
 
 .banner > div > div:nth-child(2) {
-  background-image: url("../assets/images/mr_bansal.png");
+  background-image: url("../assets/images/mr_bansal.jpg");
   background-position: right;
   aspect-ratio: 2/1.8;
 }

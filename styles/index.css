@@ -186,9 +186,12 @@ svg {
 .gallery__photo {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
-
+.gallery__photo img {
+  width: 100%;
+}
 
 .gallery__fade {
   position: absolute;
@@ -254,6 +257,8 @@ svg {
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-touch-callout: none;
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .owl-carousel .owl-item img {
   display: block;

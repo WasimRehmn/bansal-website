@@ -28,7 +28,7 @@
       padding: 10px;
     }
 
-    .three{
+    .three {
       margin: 50px;
     }
 
@@ -67,6 +67,49 @@
       max-width: 255px;
       background-color: #333;
     }
+
+    #scroll {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      text-indent: -9999px;
+      display: none;
+      -webkit-border-radius: 60px;
+      -moz-border-radius: 60px;
+      border-radius: 60px
+    }
+
+    #scroll span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -8px;
+      margin-top: -12px;
+      height: 0;
+      width: 0;
+      border: 8px solid transparent;
+      border-bottom-color: #ffffff;
+    }
+
+    #scroll:hover {
+      background-color: #e74c3c;
+      opacity: 1;
+      filter: "alpha(opacity=100)";
+      -ms-filter: "alpha(opacity=100)";
+    }
+
+    @media screen and (max-width:365px) {
+      .three p {
+
+        font-size: 14px;
+        margin-top: -65px;
+        padding-left: 60px;
+      }
+    }
   </style>
 
   <!-- Import's Script -->
@@ -83,11 +126,13 @@
 </head>
 
 <body onload="activeTab()">
-  <section class="loader_wrapper"></section>
+  <section id="top" class="loader_wrapper"></section>
   <header id="navbar"></header>
   <section class="banner"></section>
 
+  <a href="#top" id="scroll" style="display: none;"><span></span></a>
   <section id="bookCard"></section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/2f354f7b13.js" crossorigin="anonymous"></script>
   <script src="scripts/script.js"></script>
   <script type="module">
@@ -113,6 +158,21 @@
             </div>
             <iframe allowfullscreen="allowfullscreen" class="fp-iframe" src=${book_detail.url} style="border: 1px solid lightgray; width: 90%; height: 750px; margin-left: 5%;"></iframe>
         `;
+
+
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#scroll').fadeIn();
+        } else {
+          $('#scroll').fadeOut();
+        }
+      });
+      $('#scroll').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+      });
+    });
   </script>
 </body>
 

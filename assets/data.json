@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Badla",
             "author": "Vikas Bansal",
-            "cover_pic": "assets/images/badla.jpeg",
+            "cover_pic": "assets/images/badla.jpg",
             "url": "https://heyzine.com/flip-book/c50f9bc476.html",
             "pdf_path": "assets/pdf/badla.pdf"
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "title": "102 Not Out",
             "author": "Vikas Bansal",
-            "cover_pic": "assets/images/not_out.jpeg",
+            "cover_pic": "assets/images/not_out.jpg",
             "url": "https://heyzine.com/flip-book/12f4390aa3.html",
             "pdf_path": "assets/pdf/102_not_out.pdf"
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "title": "Kaun Banega Crorepati - I",
             "author": "Vikas Bansal",
-            "cover_pic": "assets/images/KBC-I.jpeg",
+            "cover_pic": "assets/images/KBC-I.jpg",
             "url": "https://heyzine.com/flip-book/a3a53f5cc1.html",
             "pdf_path": "assets/pdf/KBC-I.pdf"
         },
@@ -28,14 +28,14 @@
             "id": 4,
             "title": "77th Birthday Celebration",
             "author": "Vikas Bansal",
-            "cover_pic": "assets/images/bday_celebration.jpeg",
+            "cover_pic": "assets/images/bday_celebration.jpg",
             "url": "https://heyzine.com/flip-book/68ba6d8c98.html",
             "pdf_path": "assets/pdf/bday_celebration.pdf"
         },
         {
             "id": 5,
             "title": "Gulabo Sitabo",
-            "cover_pic": "assets/images/gulabo_sitabo.jpeg",
+            "cover_pic": "assets/images/gulabo_sitabo.jpg",
             "url": "https://heyzine.com/flip-book/74a911ef7f.html",
             "pdf_path": "assets/pdf/gulabo_sitabo.pdf"
         },
@@ -43,7 +43,7 @@
             "id": 6,
             "title": "Kaun Banega Crorepati - II",
             "author": "Vikas Bansal",
-            "cover_pic": "assets/images/KBC-II.jpeg",
+            "cover_pic": "assets/images/KBC-II.jpg",
             "url": "https://heyzine.com/flip-book/c4d6a1ad88.html",
             "pdf_path": "assets/pdf/KBC-II.pdf"
         },
@@ -51,7 +51,7 @@
             "id": 7,
             "title": "Jhund",
             "author": "Vikas Bansal",
-            "cover_pic": "assets/images/jhund.jpeg",
+            "cover_pic": "assets/images/jhund.jpg",
             "url": "https://heyzine.com/flip-book/5de54abc99.html",
             "pdf_path": "assets/pdf/KBC-II.pdf"
         },

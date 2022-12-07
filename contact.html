@@ -34,10 +34,11 @@
   <section class="banner">
     <img src="assets/images/contact_banner.jpg" alt="contact_banner" />
   </section>
+
   <section class="contact">
     <div class="info">
       <div class="message">
-        <h2>Get in Touch</h2>
+        <h2 class="head-h2">Contact Us</h2>
         <div class="info_templete">
           Have a question about inviting Vikas to do a Keynote or a
           Workshop?<br />
@@ -46,24 +47,25 @@
           If your query is urgent, you can also call or e-mail us :
         </div>
 
-        <br />
-        <div class="a-icon">
-          <a href="https://www.google.com/maps/place/D.L.F.+Tower+B/@28.5397292,77.2883461,19z/data=!3m1!5s0x390ce3fb8e1407ad:0x3a1f5aee80491790!4m10!1m2!2m1!1sOffice+No.+723,+7th+Floor,+DLF+Tower+B,+Jasola+District+Centre,+New+Delhi+-+110025!3m6!1s0x390ce40034990675:0xf114c9ac9d8f2363!8m2!3d28.5395203!4d77.2892572!15sClJPZmZpY2UgTm8uIDcyMywgN3RoIEZsb29yLCBETEYgVG93ZXIgQiwgSmFzb2xhIERpc3RyaWN0IENlbnRyZSwgTmV3IERlbGhpIC0gMTEwMDI1Wk0iS29mZmljZSBubyA3MjMgN3RoIGZsb29yIGRsZiB0b3dlciBiIGphc29sYSBkaXN0cmljdCBjZW50cmUgbmV3IGRlbGhpIDExMDAyNZIBEGNvcnBvcmF0ZV9vZmZpY2WaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUjFhM0J5YkU1bkVBReABAA!16s%2Fg%2F11f3n6pf8g"
-            target="blank" class="icon_tag"><i class="fa-solid fa-location-arrow"></i></a>
-          <span class="icon_result">Office No. 723, 7th Floor, DLF Tower B, Jasola District Centre, New Delhi - 110025
-            (INDIA)</span>
+        <div class="table">
+
+
+          <div class="tr">
+            <div class="td"><i class="fa-solid fa-location-crosshairs"></i></div>
+            <div class="td">Office No. 723, 7th Floor, DLF Tower B, Jasola District Centre, New Delhi - 110025
+              (INDIA)</div>
+          </div>
+          <div class="tr">
+            <div class="td"><i class="fa-solid fa-phone"></i></div>
+            <div class="td">+91 9873555289</div>
+          </div>
+          <div class="tr">
+            <div class="td"><i class="fa-solid fa-at"></i></div>
+            <div class="td">vikas.bansal@europratik.in</div>
+          </div>
+
         </div>
-        <br />
-        <div>
-          <span class="icon_tag"><i class="fa-solid fa-phone"></i></span>
-          <span class="icon_result">+91 9873555289</span>
-        </div>
-        <br />
-        <div>
-          <span class="icon_tag"><i class="fa-solid fa-at"></i></span>
-          <span class="icon_result">vikas.bansal@europratik.in</span>
-        </div>
-        <br />
+
       </div>
       <div class="social-container">
         <ul class="social-icons">
@@ -85,35 +87,52 @@
         </ul>
       </div>
     </div>
+
+
+
+    <div class="mapouter">
+      <div class="gmap_canvas"><iframe id="gmap_canvas"
+          src="https://maps.google.com/maps?q=Office%20No.%20723,%207th%20Floor,%20DLF%20Tower%20B,%20Jasola%20District%20Centre,%20New%20Delhi%20-%20110025&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <section class="contact-form">
+    <h2 class="head-h2">Write to us</h2>
     <div class="form">
       <form action="" method="post">
-        <div class="row">
-          <div class="form__group">
-            <input type="text" id="f_name" class="form__field" placeholder="Enter First Name" required />
-            <label for="f_name" class="form__label">First Name</label>
+        <div class="inputs">
+          <div class="row">
+            <div class="form__group">
+              <input type="text" id="f_name" class="form__field" placeholder="Enter First Name" required />
+              <label for="f_name" class="form__label">First Name</label>
+            </div>
+            <div class="form__group">
+              <input type="text" id="l_name" class="form__field" placeholder="Enter Last Name" />
+              <label for="l_name" class="form__label">Last Name</label>
+            </div>
+
+            <div class="form__group">
+              <input type="email" id="email" class="form__field" placeholder="Enter Email" required />
+              <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="form__group">
+              <input type="number" id="mobile" class="form__field" placeholder="Enter Mobile Number" required />
+              <label for="mobile" class="form__label">Mobile No.</label>
+            </div>
           </div>
-          <div class="form__group">
-            <input type="text" id="l_name" class="form__field" placeholder="Enter Last Name" />
-            <label for="l_name" class="form__label">Last Name</label>
+          <div class="row">
+            <div class="form__group">
+              <input type="text" id="subject" class="form__field" placeholder="Enter Subject" required />
+              <label for="subject" class="form__label">Subject</label>
+            </div>
+            <div class="form__group">
+              <textarea id="message" class="form__field" placeholder="Enter Message" rows="13" required></textarea>
+              <label for="message" class="form__label">Message</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="form__group">
-            <input type="email" id="email" class="form__field" placeholder="Enter Email" required />
-            <label for="email" class="form__label">Email</label>
-          </div>
-          <div class="form__group">
-            <input type="number" id="mobile" class="form__field" placeholder="Enter Mobile Number" required />
-            <label for="mobile" class="form__label">Mobile No.</label>
-          </div>
-        </div>
-        <div class="form__group">
-          <input type="text" id="subject" class="form__field" placeholder="Enter Subject" required />
-          <label for="subject" class="form__label">Subject</label>
-        </div>
-        <div class="form__group">
-          <textarea id="message" class="form__field" placeholder="Enter Message" rows="6" required></textarea>
-          <label for="message" class="form__label">Message</label>
         </div>
         <div>
           <input class="submit_btn" type="submit" />
