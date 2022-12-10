@@ -1,129 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Books | Vikas bansal</title>
-    <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
-    <!-- CSS only -->
-    <link rel="stylesheet" href="styles/books.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <!-- Import's Script -->
-    <script type="module">
-      import { navbar } from "./components/navbar.js";
-      import { loader } from "./components/loader.js";
-      import { footer } from "./components/footer.js";
 
-      let header = document.getElementById("navbar");
-      header.innerHTML = navbar();
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books | Vikas bansal</title>
+  <link rel="icon" href="assets/images/vikas_bansal_logo.png" />
+  <!-- CSS only -->
+  <link rel="stylesheet" href="styles/books.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <!-- Import's Script -->
+  <script type="module">
+    import { navbar } from "./components/navbar.js";
+    import { loader } from "./components/loader.js";
+    import { footer } from "./components/footer.js";
 
-      let loaderComponent = document.querySelector(".loader_wrapper");
-      loaderComponent.innerHTML = loader();
+    let header = document.getElementById("navbar");
+    header.innerHTML = navbar();
 
-      let footerComponent = document.getElementById("footer");
-      footerComponent.innerHTML = footer();
-    </script>
-  </head>
-  <body onload="activeTab()">
-    <section class="loader_wrapper"></section>
-    <header id="navbar"></header>
-    <section class="banner">
-      <img
-        style="aspect-ratio: 3/1.3"
-        src="assets/images/books_banner.jpg"
-        alt="banner"
-      />
-    </section>
+    let loaderComponent = document.querySelector(".loader_wrapper");
+    loaderComponent.innerHTML = loader();
 
-    <section>
-      <div class="one">
-        <h1>Books</h1>
+    let footerComponent = document.getElementById("footer");
+    footerComponent.innerHTML = footer();
+  </script>
+</head>
+
+<body onload="activeTab()">
+  <section class="loader_wrapper"></section>
+  <header id="navbar"></header>
+  <section class="banner">
+    <img style="aspect-ratio: 3/1.3" src="assets/images/books_banner.jpg" alt="banner" />
+  </section>
+
+  <section>
+    <div class="one">
+      <h1>Books</h1>
+    </div>
+    <main class="page-content">
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Badla</h2>
+          <p class="copy">
+            वह मूर्ख होता है जोह सिर्फ सच को ही जानता है ...<br />
+            और सच और झूठ के फर्क को नहीं जानता है
+          </p>
+          <a href="/book-details.html?id=1" class="btn">Read Book</a>
+        </div>
       </div>
-      <main class="page-content">
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Badla</h2>
-            <p class="copy">
-              वह मूर्ख होता है जोह सिर्फ सच को ही जानता है ...<br />
-              और सच और झूठ के फर्क को नहीं जानता है
-            </p>
-            <a href="/book-details.html?id=1" class="btn">Read Book</a>
-          </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">102 Not Out</h2>
+          <p class="copy">
+            जीवन एक तोहफा है। मृत्यु को देखकर उसका अवमूल्यन नहीं करना चाहिए।
+          </p>
+          <a href="/book-details.html?id=2" class="btn">Read Book</a>
         </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">102 Not Out</h2>
-            <p class="copy">
-              जीवन एक तोहफा है। मृत्यु को देखकर उसका अवमूल्यन नहीं करना चाहिए।
-            </p>
-            <a href="/book-details.html?id=2" class="btn">Read Book</a>
-          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">KBC - I</h2>
+          <p class="copy">It's the desert you've always dreamed of</p>
+          <a href="/book-details.html?id=3" class="btn">Read Book</a>
         </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">KBC - I</h2>
-            <p class="copy">It's the desert you've always dreamed of</p>
-            <a href="/book-details.html?id=3" class="btn">Read Book</a>
-          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">77th B'day Celebration</h2>
+          <p class="copy">
+            Seriously, straight up, just blast off into outer space today
+          </p>
+          <a href="/book-details.html?id=4" class="btn">Read Book</a>
         </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">77th B'day Celebration</h2>
-            <p class="copy">
-              Seriously, straight up, just blast off into outer space today
-            </p>
-            <a href="/book-details.html?id=4" class="btn">Read Book</a>
-          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Gulabo Sitabo</h2>
+          <p class="copy">
+            Check out all of these gorgeous mountain trips with beautiful
+            views of, you guessed it, the mountains
+          </p>
+          <a href="/book-details.html?id=5" class="btn">Read Book</a>
         </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Gulabo Sitabo</h2>
-            <p class="copy">
-              Check out all of these gorgeous mountain trips with beautiful
-              views of, you guessed it, the mountains
-            </p>
-            <a href="/book-details.html?id=5" class="btn">Read Book</a>
-          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">KBC - II</h2>
+          <p class="copy">
+            Plan your next beach trip with these fabulous destinations
+          </p>
+          <a href="/book-details.html?id=6" class="btn">Read Book</a>
         </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">KBC - II</h2>
-            <p class="copy">
-              Plan your next beach trip with these fabulous destinations
-            </p>
-            <a href="/book-details.html?id=6" class="btn">Read Book</a>
-          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Jhund</h2>
+          <p class="copy">It's the desert you've always dreamed of</p>
+          <a href="/book-details.html?id=7" class="btn">Read Book</a>
         </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Jhund</h2>
-            <p class="copy">It's the desert you've always dreamed of</p>
-            <a href="/book-details.html?id=7" class="btn">Read Book</a>
-          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Chehre</h2>
+          <p class="copy">It's the desert you've always dreamed of</p>
+          <a href="/book-details.html?id=8" class="btn">Read Book</a>
         </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Chehre</h2>
-            <p class="copy">It's the desert you've always dreamed of</p>
-            <a href="/book-details.html?id=8" class="btn">Read Book</a>
-          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">Jasbaton Ka Ghar</h2>
+          <p class="copy">It's the desert you've always dreamed of</p>
+          <a href="/book-details.html?id=9" class="btn">Read Book</a>
         </div>
-        <div class="card">
-          <div class="content">
-            <h2 class="title">Jasbaton Ka Ghar</h2>
-            <p class="copy">It's the desert you've always dreamed of</p>
-            <a href="/book-details.html?id=9" class="btn">Read Book</a>
-          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2 class="title">80 Years of Glory of Big B</h2>
+          <p class="copy">It's the desert you've always dreamed of</p>
+          <a href="/book-details.html?id=10" class="btn">Read Book</a>
         </div>
-      </main>
-    </section>
-   
-    <footer id="footer"></footer>
-    <script
-      src="https://kit.fontawesome.com/2f354f7b13.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts/script.js"></script>
-  </body>
+      </div>
+    </main>
+  </section>
+
+  <footer id="footer"></footer>
+  <script src="https://kit.fontawesome.com/2f354f7b13.js" crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>

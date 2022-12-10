@@ -70,6 +70,14 @@
             "cover_pic": "assets/images/jasbaton_ka_ghar.jpg",
             "url": "https://heyzine.com/flip-book/0f411e8a96.html",
             "pdf_path": "assets/pdf/jasbaton_ka_ghar.pdf"
+        },
+        {
+            "id": 10,
+            "title": "80 Years of Glory of Big B",
+            "author": "Vikas Bansal",
+            "cover_pic": "assets/images/80TH-BIRTHDAY.jpeg",
+            "url": "https://heyzine.com/flip-book/47e131649e.html",
+            "pdf_path": "assets/pdf/jasbaton_ka_ghar.pdf"
         }
     ]
 }

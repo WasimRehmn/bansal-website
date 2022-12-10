@@ -102,7 +102,7 @@
   <section class="contact-form">
     <h2 class="head-h2">Write to us</h2>
     <div class="form">
-      <form action="" method="post">
+      <form onsubmit="sendMail(); reset(); return false;">
         <div class="inputs">
           <div class="row">
             <div class="form__group">
@@ -141,6 +141,7 @@
     </div>
   </section>
   <footer id="footer"></footer>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://kit.fontawesome.com/2f354f7b13.js" crossorigin="anonymous"></script>
   <script src="scripts/script.js"></script>
   <script src="scripts/contact.js"></script>

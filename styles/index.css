@@ -108,39 +108,9 @@ svg {
   margin: 0px 0px;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   width: 100%;
-  /* aspect-ratio: 3/1; */
   height: fit-content;
   border-radius: 20px;
 }
-/* .swiper-container .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper-container .swiper-wrapper {
-  margin-bottom: 10px;
-}
-
-.swiper-container .item {
-  width: 90%;
-  aspect-ratio: 1/1;
-  height: fit-content; 
-  background: transparent;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  border-radius: 8px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.swiper-container .item img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-} */
 
 .swiper-container .bg {
   animation: slide 3s ease-in-out infinite alternate;

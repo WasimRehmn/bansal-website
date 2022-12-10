@@ -1,5 +1,5 @@
 export const loader = () => {
-    return `
+  return `
     <style>
       @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap");
       * {
@@ -27,10 +27,11 @@ export const loader = () => {
         text_align: center;
         z-index: 1000;  
       }
-      #container {
+      #container:before, #container:after {a                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         position: relative;
         transform: scale(0.725);
       }
+      
       .divider {
         position: absolute;
         z-index: 2;
@@ -174,5 +175,5 @@ export const loader = () => {
         <span class="letter" aria-hidden="true">n</span>
         <span class="letter" aria-hidden="true">g</span>
       </p>
-    </div>`
-}
+    </div>`;
+};

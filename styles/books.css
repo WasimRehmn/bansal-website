@@ -213,6 +213,9 @@ h1 em {
 .card:nth-child(9):before {
   background-image: url("../assets/images/jasbaton_ka_ghar.jpg");
 }
+.card:nth-child(10):before {
+  background-image: url("../assets/images/80TH-BIRTHDAY.jpeg");
+}
 .content {
   position: relative;
   display: flex;

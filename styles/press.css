@@ -2,12 +2,13 @@ body {
   width: 100vw;
 }
 .banner {
-  padding-top: 72px;
+  padding-top: 72px; 
 }
 .banner img {
   width: 100%;
   aspect-ratio: 3/1.15;
 }
+
 
 .aticles {
   width: 100%;
@@ -23,6 +24,7 @@ body {
   min-width: 350px;
 }
 
+
 .videos {
   width: 100%;
   padding: 10px 40px;
@@ -30,11 +32,15 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.videos iframe {
+.videos iframe, .videos video {
   width: 45%;
   margin-bottom: 50px;
   aspect-ratio: 3/2;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.videos video {
+  margin: 40px;
+  box-shadow: none;
 }
 
 .images {
@@ -64,21 +70,7 @@ body {
   transform: scale(1.05);
 }
 
-@media (max-width: 835px) {
-  .images {
-    padding: 50px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 690px) {
-  .images {
-    padding: 40px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .videos {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 
 /* aritcle */
 
@@ -220,82 +212,6 @@ body {
   background-color: #000000;
 }
 
-@media (hover: hover) and (min-width: 600px) {
-  .card:after {
-    transform: translateY(0);
-  }
-  .content {
-    transform: translateY(calc(100% - 4.5rem));
-  }
-  .content > *:not(.title) {
-    opacity: 0;
-    transform: translateY(1rem);
-    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-  }
-  .card:hover,
-  .card:focus-within {
-    align-items: center;
-  }
-  .card:hover:before,
-  .card:focus-within:before {
-    transform: translateY(-4%);
-  }
-  .card:hover:after,
-  .card:focus-within:after {
-    transform: translateY(-50%);
-  }
-  .card:hover .content,
-  .card:focus-within .content {
-    transform: translateY(0);
-  }
-  .card:hover .content > *:not(.title),
-  .card:focus-within .content > *:not(.title) {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: calc(var(--d) / 8);
-  }
-  .card:focus-within:before,
-  .card:focus-within:after,
-  .card:focus-within .content,
-  .card:focus-within .content > *:not(.title) {
-    transition-duration: 0s;
-  }
-}
-@media (max-width: 800px) {
-  .card {
-    width: 80%;
-    margin: 0 auto 60px;
-  }
-
-  .videos iframe {
-    width: 80%;
-    margin: 0 auto 30px;
-  }
-
-  .images img {
-    width: 45%;
-    margin: 0 auto 60px;
-  }
-}
-@media (max-width: 400px) {
-  .images {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .aticles,
-  .videos {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .images img {
-    width: 45%;
-    margin: 0 auto 60px;
-    margin-bottom: 20px;
-  }
-}
-
 /* heading */
 .three h1 {
   margin: 50px;
@@ -403,3 +319,102 @@ body {
   }
 }
 /*End style*/
+@media (max-width: 835px) {
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 690px) {
+  .images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .videos {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .videos video {
+    width: 100%;
+  }
+
+  .v > h1 {
+    margin: 0px 50px;
+  }
+}
+
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+  .card:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+  .card:hover:before,
+  .card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card:hover:after,
+  .card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card:hover .content,
+  .card:focus-within .content {
+    transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+  .card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+  .card:focus-within:before,
+  .card:focus-within:after,
+  .card:focus-within .content,
+  .card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    width: 80%;
+    margin: 0 auto 60px;
+  }
+
+  .videos iframe {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+
+  .images img {
+    width: 45%;
+    margin: 0 auto 60px;
+  }
+}
+@media (max-width: 450px) {
+  .images {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .aticles,
+  .videos {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .images img {
+    width: 45%;
+    margin: 0 auto 60px;
+    margin-bottom: 20px;
+  }
+}
